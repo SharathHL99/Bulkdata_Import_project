@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "Bulk Data Import & Validation System",
+    "description": "API collection for the Bulk Data Import & Validation System (Spring Boot Advanced Assignment)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8080/api/v1/import" },
+    { "key": "jobId", "value": "1" }
+  ],
+  "item": [
+    {
+      "name": "Upload File",
+      "request": {
+        "method": "POST",
+        "url": "{{baseUrl}}/upload",
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "file", "type": "file", "src": "" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Job Status",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/jobs/{{jobId}}"
+      }
+    },
+    {
+      "name": "Get Job Records (all)",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/jobs/{{jobId}}/records?page=0&size=20"
+      }
+    },
+    {
+      "name": "Get Job Records (INVALID only)",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/jobs/{{jobId}}/records?status=INVALID&page=0&size=20"
+      }
+    }
+  ]
+}
