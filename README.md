@@ -5,7 +5,7 @@ Table of Contents
 Overview
 Tech Stack
 Architecture
-Database Schema
+Database Schema 
 Project Structure
 Prerequisites
 Setup Instructions
