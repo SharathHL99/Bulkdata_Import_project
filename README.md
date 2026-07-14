@@ -45,7 +45,7 @@ API Docs	Swagger / springdoc-openapi
 Testing	JUnit 5, Mockito, Testcontainers
 ---
 Architecture
-```
+``
 Client
   │
   ▼
