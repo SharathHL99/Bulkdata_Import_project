@@ -1,0 +1,8 @@
+name,email,phone,amount,error_reason
+,alice@gmail.com,9876543211,1200,Missing name
+Bob,bobgmail.com,9876543212,900,Invalid email format
+Charlie,charlie@gmail.com,12345,800,Invalid phone number
+David,david@gmail.com,9876543213,-500,Negative amount
+John Doe,john@gmail.com,9876543210,1500,Duplicate record
+,,,0,All fields missing/blank
+Priya,priyaexample.com,abcdefghij,-100,"Invalid email, invalid phone, negative amount"
